@@ -1,0 +1,160 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Tiro Bangla", serif;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+:root {
+  --font-base: 1.4rem;
+  --font-md: 1.6rem;
+  --font-lg: 1.8rem;
+  --font-xlg: 2rem;
+  --font-gt: 2.5rem;
+  --font-h1: 3.2rem;
+  --font-h2: 2.8rem;
+  --font-h3: 2.4rem;
+  --font-h4: 2rem;
+  --font-h5: 1.7rem;
+  --font-h6: 1.4rem;
+
+  --color-base: rgb(28, 28, 54);
+  --color-inverted: rgb(251, 255, 241);
+  --violet-background: rgb(13, 90, 147);
+  --violet-gradient: linear-gradient(
+    315deg,
+    rgba(13, 90, 147, 1) 4%,
+    rgba(90, 179, 178, 1) 94%
+  );
+}
+
+h1 {
+  font-size: var(--font-h1);
+}
+
+h2 {
+  font-size: var(--font-h2);
+}
+
+h3 {
+  font-size: var(--font-h3);
+}
+
+h4 {
+  font-size: var(--font-h4);
+}
+
+h5 {
+  font-size: var(--font-h5);
+}
+
+h6 {
+  font-size: var(--font-h6);
+}
+
+body {
+  background-color: rgb(212, 228, 250);
+}
+
+header {
+  background-color: var(--violet-background);
+  background: var(--violet-gradient);
+  padding: 10px;
+  color: var(--color-inverted);
+}
+
+/* Reglas de Clases */
+
+.mencion {
+  display: flex;
+  justify-content: right;
+  font-style: italic;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+}
