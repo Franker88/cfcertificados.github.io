@@ -54,8 +54,15 @@ table {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 12px;
   font-family: "Tiro Bangla", serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .clearfix:after {
@@ -90,6 +97,9 @@ html {
     rgba(13, 90, 147, 1) 4%,
     rgba(90, 179, 178, 1) 94%
   );
+}
+p {
+  font-size: var(--font-base);
 }
 
 h1 {
@@ -136,6 +146,18 @@ header {
 }
 
 /*Media Queries*/
+
+@media (min-width: 1025px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
 
 @media (max-width: 1024px) {
   h1,
