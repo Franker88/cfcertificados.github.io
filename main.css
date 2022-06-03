@@ -98,6 +98,7 @@ html {
   --color-comp1: rgba(90, 179, 178, 1);
   --color-comp2: #63a9e6;
   --color-comp3: rgb(21, 112, 182);
+  --color-comp4: rgb(130, 208, 246);
 
   --platcolor: rgb(18, 31, 61);
   --udecolor: rgb(164, 53, 240);
@@ -151,7 +152,7 @@ header {
 ul {
   font-style: italic;
   font-family: var(--roboto-font);
-  color: var(--color-comp2);
+  color: var(--color-base);
   list-style: square;
 }
 
@@ -161,6 +162,7 @@ li {
 
 /* Reglas de Id */
 #returnbt {
+  font-family: var(--roboto-font);
   height: 30px;
   width: 100%;
   background-color: var(--color-comp3);
@@ -201,12 +203,49 @@ li {
   background-color: white;
 }
 
-#insitezone {
+#facetofacezone {
   background-color: silver;
 }
 
 #otherzone {
   background-color: var(--color-comp1);
+}
+
+#ptlogo {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0 0 20px;
+}
+
+#ptlogo:hover {
+  cursor: pointer;
+}
+
+#titlepage {
+  font-family: var(--roboto-font);
+  text-align: left;
+  margin-left: 20px;
+}
+
+#imgcurso {
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  box-shadow: 0px 10px 10px 0px black;
+}
+
+#platzibutton {
+  background-color: #97c93e;
+  justify-content: center;
+  width: 200px;
+  margin: 40px;
+  height: 50px;
+  padding: 15px;
+  transition: 0.6s;
+}
+
+#platzibutton:hover {
+  transform: scale(1.2);
 }
 
 /* Reglas de Clases */
@@ -226,7 +265,15 @@ li {
 
 .divbt {
   display: flex;
+}
+
+.portbt {
   justify-content: right;
+}
+
+.ptbt {
+  justify-content: center;
+  text-align: center;
 }
 
 .hero {
@@ -274,6 +321,7 @@ li {
   height: 30px;
   position: sticky;
   top: 0px;
+  background-color: var(--color-comp4);
 }
 
 .tabs div {
@@ -288,6 +336,19 @@ li {
   align-items: center;
 }
 
+.logoplatzi {
+  display: inline-block;
+}
+
+.platziinfo {
+  margin: 20px;
+  text-align: justify;
+}
+
+.platziimg {
+  display: flex;
+  justify-content: center;
+}
 /*Media Queries*/
 
 @media (min-width: 1025px) {
@@ -321,6 +382,13 @@ li {
 
   .maininfo {
     flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #imgcurso {
+    width: 40%;
+    height: 500px;
+    margin: 20px;
   }
 }
 
@@ -341,6 +409,12 @@ li {
   }
   .maininfo {
     flex-direction: row;
+  }
+
+  #imgcurso {
+    width: 40%;
+    height: 400px;
+    margin: 20px;
   }
 }
 
@@ -367,6 +441,19 @@ li {
   }
   .infoart:hover {
     transform: scale(1.1);
+  }
+
+  #imgcurso {
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+  }
+
+  .platziimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
